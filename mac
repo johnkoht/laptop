@@ -117,6 +117,9 @@ brew "git"
 brew "openssl"
 brew "zsh"
 
+# Docker
+cask "docker"
+
 # Heroku
 brew "heroku/brew/heroku"
 brew "parity"
