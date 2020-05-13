@@ -117,12 +117,8 @@ brew "git"
 brew "openssl"
 brew "zsh"
 
-# Docker
-cask "docker"
-
 # Heroku
 brew "heroku/brew/heroku"
-brew "parity"
 
 # GitHub
 brew "hub"
@@ -139,7 +135,18 @@ cask "gpg-suite"
 # Databases
 brew "postgres", restart_service: :changed
 brew "redis", restart_service: :changed
+
+# Misc
+cask "alfred"
+cask "iterm2"
+cask "sublime-text"
 EOF
+
+
+
+fancy_echo "Installing Oh My Zsh ..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 fancy_echo "Update heroku binary ..."
 brew unlink heroku
