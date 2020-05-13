@@ -140,6 +140,7 @@ brew "redis", restart_service: :changed
 cask "alfred"
 cask "iterm2"
 cask "sublime-text"
+brew "tree"
 EOF
 
 
