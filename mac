@@ -141,6 +141,7 @@ cask "alfred"
 cask "iterm2"
 cask "sublime-text"
 brew "tree"
+# brew "psequel"
 EOF
 
 
